@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/homeNav"
+            android:icon="@drawable/ic_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/dashNav"
+            android:icon="@drawable/ic_dash"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/revNav"
+            android:icon="@drawable/ic_rev"
+            android:title="Review" />
+        <item
+            android:id="@+id/expNav"
+            android:icon="@drawable/ic_exp"
+            android:title="Add Expense" />
+        <item
+            android:id="@+id/incNav"
+            android:icon="@drawable/ic_inc"
+            android:title="Add Income" />
+
+    </group>
+
+    <item android:title="Pocket Check">
+        <menu>
+            <item
+                android:id="@+id/shareNav"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/setNav"
+                android:icon="@drawable/ic_menu_manage"
+                android:title="Settings" />
+            <item
+                android:id="@+id/aboutNav"
+                android:icon="@drawable/ic_about"
+                android:title="About Us" />
+        </menu>
+    </item>
+
+</menu>

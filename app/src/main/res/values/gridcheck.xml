@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="gridu">
+        <item>General</item>
+        <item>Personal</item>
+        <item>House</item>
+        <item>Clothes</item>
+        <item>Food &amp; Drinks</item>
+        <item>Transport &amp; Travel</item>
+        <item>Fun</item>
+        <item>Misc</item>
+    </string-array>
+</resources>

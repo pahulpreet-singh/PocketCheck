@@ -1,0 +1,54 @@
+Accounts:
+	Srno, Name, Type, OpenBalance, Default
+Income:
+	Srno, Amount, accName^, accSrno^, Label, Date
+userAccont:
+	Balance
+Monthly:
+	expenses, type, subtype, accName, Notes, Date
+
+
+
+
+
+
+			mon1, mon2, mon3,  mon4
+			Jan,  feb,  march, apr
+			may,  June, july,  aug
+			sep,  oct,  nov,   dec
+Calendar c=Calendar.getInstance();
+int month=c.get(Calendar.MONTH);
+
+if(month==0||month==4||month==8)
+{
+	//insert expenses
+}
+else if(month==1||month==5||month==9)
+{
+	//insert expenses
+}
+else if(month==2||month==6||month==10)
+{
+	//insert expenses
+}
+else if(month==3||month==7||month==11)
+{
+	//insert expenses
+}
+
+
+Jan-mon1	feb-mon2	march-mon3	apr-mon4
+may-mon1	june-mon2
+
+
+
+
+To-Do
+	seekbar wala page
+	on expense delete- update home page for Month expense and remaining budget
+
+
+
+
+
+

@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="pocket.check.pocketcheck.ReviewExpanded"
+    tools:showIn="@layout/activity_review_expanded">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:background="#03fcba">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/expenses"
+
+                    />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:alpha="0.7"
+                    android:background="#03fcba">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="General"
+                        android:id="@+id/type"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginLeft="52dp"
+                        android:paddingRight="16dp"
+                        />
+
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:background="#fff"
+                    android:id="@+id/imageView6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="13dp"
+                    android:src="@drawable/ic_box_50" />
+
+
+
+            </FrameLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/frameLayout"
+
+
+                android:layout_centerHorizontal="true"
+                android:background="#03fcba">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="#03fcba"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:background="@drawable/roundedwhitebg"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Personal"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Social"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Family"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="5dp"
+                        android:paddingBottom="4dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:paddingTop="4dp"
+                        android:text="Work"
+                        android:textAppearance="?android:attr/textAppearanceMedium" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:gravity="left|top"
+                android:hint="(empty)"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:maxLength="100"
+                android:layout_below="@+id/textView30"
+                android:layout_alignLeft="@+id/textView30"
+                android:layout_alignStart="@+id/textView30"
+                android:layout_marginRight="16dp"/>
+
+
+
+            <ImageView
+                android:id="@+id/imageView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="3dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/date_pick"
+                android:layout_below="@+id/editText4"
+                android:layout_alignLeft="@+id/editText4"
+                android:layout_alignStart="@+id/editText4" />
+
+            <TextView
+                android:id="@+id/dateExp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:layout_alignTop="@+id/imageView8"
+                android:layout_toRightOf="@+id/imageView8"
+                android:layout_toEndOf="@+id/imageView8" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Account"
+                android:id="@+id/textView22"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout4"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Cash"
+                android:id="@+id/textView31"
+
+                android:layout_below="@+id/textView22"
+                android:layout_alignLeft="@+id/textView22"
+                android:layout_alignStart="@+id/textView22" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Label"
+                android:id="@+id/textView30"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/textView31" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Amount"
+                android:id="@+id/textView32"
+
+
+                android:layout_alignTop="@+id/textView22"
+                android:layout_alignRight="@+id/editText4"
+                android:layout_alignEnd="@+id/editText4" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="0"
+                android:id="@+id/textView33"
+                android:layout_above="@+id/textView30"
+                android:layout_alignRight="@+id/editText4"
+                android:layout_alignEnd="@+id/editText4"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="@string/currency"
+                android:id="@+id/textView34"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_alignTop="@+id/textView33"
+                android:layout_toLeftOf="@+id/textView33"
+                android:layout_toStartOf="@+id/textView33" />
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pocket.check.pocketcheck">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/pocketcheck"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".CreateUser" />
+        <activity
+            android:name=".Home"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Expenses"
+            android:label="@string/title_activity_expenses"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".Income"
+            android:label="@string/title_activity_income"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".AddAccount"
+            android:label="@string/title_activity_add_account"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".Splash"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Review"
+            android:label="@string/title_activity_review"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".ReviewExpanded"
+            android:label="@string/title_activity_review_expanded"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".IncomeReviewExpanded"
+            android:label="@string/title_activity_income_review_expanded"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity
+            android:name=".Dashboard"
+            android:label="@string/title_activity_dashboard"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".Home" />
+        </activity>
+        <activity android:name=".GridCheck"
+            android:theme="@style/Theme.AppCompat.mydial">
+            </activity>
+    </application>
+
+</manifest>
